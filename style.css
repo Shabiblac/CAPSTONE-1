@@ -6,6 +6,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .top-header {
   display: none;
 }
@@ -91,7 +95,12 @@
   font-weight: 900;
   font-size: 35px;
   margin-top: 10px;
-  color: #ec5242;
+  color: transparent;
+  -webkit-text-stroke: 1px #ec5242;
+  background-image: url(./images/text-bg.jpg);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
 }
 
 .info {
@@ -189,6 +198,64 @@
 
 .program-link {
   display: none;
+}
+
+#featured-speaker {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#featured-speaker h1 {
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cards {
+  display: flex;
+  margin-bottom: 7px;
+  transition: 0.4s ease-in-out;
+}
+
+.cards:hover {
+  transform: scale(1.1);
+}
+
+.cards ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-left: 15px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.jobs {
+  margin-top: 0;
+  padding-top: 0;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 10px;
+  color: #ec5242;
+}
+
+.resume {
+  font-weight: 700;
+  font-size: 10px;
 }
 
 #partners {

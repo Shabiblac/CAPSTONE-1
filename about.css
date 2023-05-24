@@ -16,6 +16,10 @@
   display: none;
 }
 
+.logo {
+  display: none;
+}
+
 .menu-icon {
   background: #d3d3d32d;
   padding-left: 10px;
@@ -93,16 +97,21 @@
 }
 
 .hero-container h2 {
-  margin-top: 80px;
+  margin-top: 100px;
   font-weight: 400;
-  font-size: 45px;
+  font-size: 50px;
   color: #ec5242;
 }
 
+/* .hero-container h1 {
+  font-size: 50px;
+} */
+
 .details {
   width: 100%;
-  font-weight: 800;
-  font-size: 25px;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 10px;
   color: transparent;
   -webkit-text-stroke: 1px #ec5242;
   background-image: url(./images/text-bg.jpg);
@@ -184,6 +193,10 @@
   display: none;
 }
 
+.items img {
+  margin: 0 auto;
+}
+
 #cc-logo img {
   border: 2px solid darkgrey;
   margin-top: 40px;
@@ -218,9 +231,11 @@
   color: whitesmoke;
   width: 100%;
   display: flex;
+
+  /* gap: 20px; */
+  text-align: center;
   background: #272a31;
   align-items: center;
-  text-align: center;
   flex-direction: column;
 }
 
@@ -230,21 +245,18 @@
   margin-left: 47%;
 }
 
+.item-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.item-list2 {
+  display: flex;
+  justify-content: center;
+}
+
 .items {
-  /* display: flex; */
-  width: 40%;
-  margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.items ul {
-  display: grid;
-  justify-content: space-between;
-}
-
-.items li {
-  margin: 10px;
-  border-bottom: 2px solid #a04038;
 }
 
 #footer {
@@ -279,6 +291,11 @@
     width: 100%;
   }
 
+  .top-header img {
+    height: 20px;
+    padding-top: 8px;
+  }
+
   .top-header ul {
     display: flex;
     justify-content: space-between;
@@ -294,15 +311,42 @@
 
   .desktop-nav {
     display: flex;
-    justify-content: flex-end;
+  }
+
+  .logo {
+    display: flex;
+    height: 1px;
+    margin-top: 3px;
+    padding-top: 7px;
+    margin-left: 50px;
+    margin-right: 105px;
+    font-weight: 900;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+  }
+
+  .logo span {
+    color: #ec5242;
   }
 
   .desktop-nav a {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
     padding: 5px;
-    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
     color: #191919;
+  }
+
+  .hero-container a {
+    font-size: 12px;
+  }
+
+  .desktop-nav a:hover {
+    color: #ec5242;
+    font-weight: bold;
   }
 
   .desktop-nav .get-started {
@@ -310,7 +354,6 @@
     border: 5px solid #f04a33;
     border-radius: 5px;
     font-size: 15px;
-    margin-right: 50px;
     text-align: center;
   }
 
@@ -330,17 +373,22 @@
     display: flex;
   }
 
+  .hero-container h1 {
+    font-size: 60px;
+  }
+
   .hero-container h3 {
     width: 100%;
     font-size: 15px;
   }
 
-  .hero-container a {
-    font-size: 12px;
-  }
-
   #cc-logo span {
     display: flex;
+    width: 65%;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
   }
 
   #partners {
@@ -367,5 +415,12 @@
     grid-column-gap: 20px;
     grid-row-gap: 0;
     padding: 0 100px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .logo {
+    margin-left: 10%;
+    margin-right: 35%;
   }
 }

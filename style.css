@@ -193,6 +193,7 @@
   font-weight: 900;
   font-size: 16px;
   margin: 40px;
+  color: whitesmoke;
   margin-left: 65px;
   cursor: pointer;
   justify-content: center;
@@ -223,15 +224,6 @@
   font-size: 23px;
 }
 
-/* #featured-speaker h1::after{
-  content: '';
-  display: block;
-  margin: 0 auto;
-  background: black;
-  width: 10%;
-  height: 2px;
-} */
-
 .card-wrapper > div:nth-last-child(-n + 4) {
   display: none;
 }
@@ -240,6 +232,7 @@
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 60px;
+  margin-bottom: 50px;
   padding-left: 10px;
   padding-right: 10px;
 }

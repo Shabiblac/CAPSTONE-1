@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -65,6 +67,10 @@
   transition: transform 0.5s;
 }
 
+.mobile-menu li a:hover {
+  color: #ec5242;
+}
+
 .cancle-mobile {
   position: absolute;
   top: 25px;
@@ -76,7 +82,6 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -205,7 +210,7 @@
   height: 13em;
   text-align: center;
   margin-top: 30px;
-  padding-top: 30px;
+  padding: 10px;
   background-repeat: no-repeat;
 }
 
@@ -292,14 +297,6 @@
     justify-content: flex-end;
   }
 
-  /* .desktop-nav .logo {
-        font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-        padding: 5px;
-        margin: 20px;
-    } */
-
   .desktop-nav a {
     font-weight: 400;
     font-size: 12px;
@@ -369,5 +366,6 @@
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0;
+    padding: 0 100px;
   }
 }

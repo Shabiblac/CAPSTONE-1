@@ -49,6 +49,10 @@
     color: #191919;
   }
 
+  .desktop-nav a:hover {
+    color: #ec5242;
+  }
+
   .desktop-nav .get-started {
     color: #f04a33;
     border: 5px solid #f04a33;
@@ -136,6 +140,7 @@
     font-size: 20px;
     line-height: 28px;
     margin-top: 70px;
+    padding-bottom: 40px;
     margin-left: 35%;
     text-decoration: underline;
     color: white;
@@ -145,12 +150,20 @@
     color: #d3d3d3;
   }
 
-  #featured-speaker {
+  .button {
+    display: none;
+  }
+
+  .card-wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
     justify-items: center;
     align-items: center;
+  }
+
+  .card-wrapper > div:nth-last-child(-n + 4) {
+    display: flex;
   }
 
   .card-container {
@@ -186,6 +199,9 @@
   #footer {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    height: 8rem;
+    align-items: center;
   }
 
   .footer-txt {

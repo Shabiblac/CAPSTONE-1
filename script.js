@@ -1,34 +1,9 @@
 const body = document.querySelector('body');
-const coverMenu = document.querySelector('.nav-cover');
 const mobileMenu = document.querySelector('.mobile-menu');
 const closeMobile = document.querySelector('.cancle-mobile');
 const menuIcon = document.querySelector('.menu-icon');
-
-function toggleMenu() {
-  coverMenu.classList.toggle('mobile-menu');
-  mobileMenu.classList.toggle('hide');
-  closeMobile.classList.toggle('hide');
-  body.classList.add('no-scroll');
-}
-menuIcon.addEventListener('click', toggleMenu);
-
-function closeMenu() {
-  closeMobile.classList.toggle('hide');
-  coverMenu.classList.toggle('hide');
-  mobileMenu.classList.toggle('.hide');
-  body.classList.remove('no-scroll');
-}
-closeMobile.addEventListener('click', closeMenu);
-
-const menuLinks = document.querySelectorAll('.menu-link');
-menuLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    coverMenu.classList.toggle('hide');
-    mobileMenu.classList.remove('hide');
-    closeMobile.classList.toggle('hide');
-    body.classList.remove('no-scroll');
-  });
-});
+const button = document.querySelector('.button');
+let cards = null;
 
 // Featured Speakers //
 const speakers = [{
@@ -73,7 +48,7 @@ const speakers = [{
   resume: 'Engr Brooke is an expert in the Software development space, and have used her skills to improve the world with her techniques',
 }];
 
-const featuredSpeaker = document.querySelector('#featured-speaker');
+const featuredSpeaker = document.querySelector('.card-wrapper');
 
 /* eslint-disable no-plusplus */
 function speakerCard() {
@@ -90,8 +65,41 @@ function speakerCard() {
                     </div>
             </div>`;
   }
+
+  cards = document.querySelectorAll('.card-container');
 }
 
 window.onload = () => {
   speakerCard();
 };
+
+button.addEventListener('click', () => {
+  cards.forEach((card) => {
+    card.style.display = 'grid';
+  });
+
+  button.classList.add('hide');
+});
+
+function toggleMenu() {
+  mobileMenu.classList.toggle('hide');
+  closeMobile.classList.toggle('hide');
+  body.classList.add('no-scroll');
+}
+menuIcon.addEventListener('click', toggleMenu);
+
+function closeMenu() {
+  closeMobile.classList.toggle('hide');
+  mobileMenu.classList.toggle('hide');
+  body.classList.remove('no-scroll');
+}
+closeMobile.addEventListener('click', closeMenu);
+
+const menuLinks = document.querySelectorAll('.menu-link');
+menuLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hide');
+    closeMobile.classList.toggle('hide');
+    body.classList.remove('no-scroll');
+  });
+});

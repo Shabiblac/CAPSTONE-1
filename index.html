@@ -4,13 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Capstone-1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- -------------------- NAVBAR -------------------- -->
     <header>
-        <nav>
-            <h1>hello</h1>
+        <div class="top-header">
+            <img src="./images/icons/bxl-facebook.svg" alt="facebook icon">
+            <img src="./images/icons/bxl-twitter (1).svg" alt="twiter-icon">
+            <ul>
+                <li>English</li>
+                <li>My page</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+        <nav class="nav-cover">
+            <div class="menu-icon"><img src="./images/icons/menu-regular-24.png" alt=""></div>
+            <div class="desktop-nav">
+                <a href="./about.html">About</a>
+                <a href="#main-program">Program</a>
+                <a href="#">Sponsor</a>
+                <a href="#" class="get-started">Get started</a>
+            </div>
+            <div class="mobile-menu hide">
+                <ul>
+                    <li><a href="./about.html" class="menu-link">About</a></li>
+                    <li><a href="#main-program" class="menu-link">Program</a></li>
+                    <li><a href="#featured-speaker" class="menu-link">Speakers</a></li>
+                    <li><a href="#partners" class="menu-link">Partners</a></li>
+                </ul>
+                <div class="cancle-mobile hide">
+                    <img src="./images/icons/Icon.svg" alt="cancle-icon">
+                </div>
+            </div>
         </nav>
     </header>
+    <!-- -------------------- Hero -------------------- -->
+    <section id="hero">
+        <div class="hero-container">
+            <h2>The coder</h2>
+            <h1 class="details">
+                CREATIVE COMMON <br> GLOBAL SUMMIT 2023
+            </h1>
+            <p class="info">A joyful celebration beliving in the value of openness and sharring a positive
+                change with people from over 80 countries in the world.
+            </p>
+            <h3>2023.10.15(THU) ~ 17(SAT)</h3>
+        </div>
+    </section>
+     <!-- -------------------- Main Program -------------------- -->
+     <section id="main-program">
+        <div class="title-container">
+            <h2 class="title">Main Event</h2>
+            <div class="TitleMark"></div>
+        </div>
+        <div class="main-grid">
+            <div class="main-card">
+              <img
+                src="./images/icons/program_icon_01 1.svg"
+                alt="lecture"
+                class="main Icon"
+              />
+              <h2 class="card-title">Lecture</h2>
+              <p class="card-details">
+                Listen to the speakers from various countries about the messages of
+                sharing and opening.
+              </p>
+            </div>
+            <div class="main-card">
+              <img
+                src="./images/icons/program_icon_02 1.svg"
+                alt="lecture"
+                class="mainIcon"/>
+              <h2 class="card-title">Exhibition</h2>
+              <p class="card-details">
+                Appreciate various creations applying CC license of developers,
+                organized from developers.
+              </p>
+            </div>
+            <div class="main-card">
+              <img
+                src="./images/icons/program_icon_03 1.svg"
+                alt="lecture"
+                class="mainIcon"
+              />
+              <h2 class="card-title">Forum</h2>
+              <p class="card-details">
+                Have the time to share your thoughts and opinions with experts for
+                each topic.
+              </p>
+            </div>
+            <div class="main-card">
+              <img
+                src="./images/icons/program_icon_04 1.svg"
+                alt="lecture"
+                class="mainIcon"
+              />
+              <h2 class="card-title">Workshop</h2>
+              <p class="card-details">
+                Try creating your own work using open source license rather than
+                just watching at it.
+              </p>
+            </div>
+            <div class="main-card">
+              <img
+                src="./images/icons/program_icon_05 1.svg"
+                alt="lecture"
+                class="mainIcon"
+              />
+              <h2 class="card-title">CC Ignite</h2>
+              <p class="card-details">
+                Get opportunities to network with otther developers around the world,
+                also after the summit.
+              </p>
+            </div>
+        </div>
+        <button class="main-button" type="button">
+          Join Global CC Summit 2023
+        </button>
+        <a href="#" class="program-link">SEE THE WHOLE PROGRAM</a>
+    </section>
+    <!-- -------------------- Speakers -------------------- -->
+    <section id="featured-speaker">
+        <h1>Featured Speakers</h1>
+        <div class="TitleMark"></div>
+        <div class="card-wrapper">
+        </div>
+
+      <div class="button">
+        <button type="submit"> MORE  <img src="./images/Speakers/arrow_down 1.svg" alt="arrow icon"/> </button>
+      </div>
+
+    </section>
+        <!-- -------------------- Partner -------------------- -->
+      <section id="partners">
+        <div class="title-container">
+          <h2 class="title">Partner</h2>
+          <div class="TitleMark"></div>
+          <div class="items">
+            <ul class="item-list">
+              <li><img src="./images/mozilla 1.png" alt="partners"></li>
+              <li><img src="./images/googlekorea 1.png" alt="partners"></li>
+              <li><img src="./images/naver 1.png" alt="partners"></li>
+              <li><img src="./images/daumkakaologo 1.png" alt="partners"></li>
+              <li><img src="./images/airbnb 1.png" alt="partners"></li>
+            </ul>
+          </div>
+      </div>
+      </section>
+       <!-- -------------------- Footer -------------------- -->
+       <section id="footer">
+        <img src="./images/footer-iconn.jpg" alt="logo">
+        <h3 class="footer-txt">2023 The Coder Summit. Some Rights Reserved.</h3>
+       </section>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

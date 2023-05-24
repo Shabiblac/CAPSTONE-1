@@ -43,7 +43,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://shabiblac.github.io/Microverse-Portfolio-Design/)
+- [Live Demo Link]( https://shabiblac.github.io/CAPSTONE-1/)
 
 
 
@@ -76,7 +76,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:<br>
 
  cd my-folder
-  git clone https://github.com/Shabiblac/Microverse-Portfolio-Design.git
+  git clone https://github.com/Shabiblac/CAPSTONE-1.git
 
 ## Install Linters
 

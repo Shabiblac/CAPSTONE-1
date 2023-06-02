@@ -51,8 +51,8 @@ const speakers = [{
 const featuredSpeaker = document.querySelector('.card-wrapper');
 
 /* eslint-disable no-plusplus */
-function speakerCard() {
-  for (let card = 0; card < speakers.length; card++) {
+function speakerCard() 
+  for (let card = 0; card < speakers.length; card++) 
     featuredSpeaker.innerHTML += `
             <div class="card-container">
                 <div class="cards">
